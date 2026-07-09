@@ -1,0 +1,7 @@
+typer>=0.9.0
+pyyaml>=6.0.1
+openai>=1.0.0
+watchdog>=3.0.0
+torch>=2.0.0
+langgraph>=0.0.10
+langchain-core>=0.1.0

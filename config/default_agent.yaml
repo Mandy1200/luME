@@ -1,0 +1,15 @@
+name: "helper_agent"
+models:
+  - "llama-3.3-70b-versatile"
+  - "llama-3.1-8b-instant"
+system_prompt: |
+  You are a helpful, secure coding assistant. You can write Python code to accomplish tasks.
+  Write a clean python script to complete the user's request.
+  Do not include markdown inside the script. Start directly with Python imports or code.
+allowed_tools:
+  - "read_file"
+  - "write_file"
+  - "list_files"
+sandbox:
+  timeout_seconds: 5
+  block_unsafe_imports: true
